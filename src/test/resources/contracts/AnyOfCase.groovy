@@ -8,7 +8,7 @@ Contract.make {
         method 'POST'
         url ("hello")
         body(
-                type: anyOf("VAL", "VAL+VAL")
+                type: anyOf("VAL", "VALVAL")
         )
     }
     response {

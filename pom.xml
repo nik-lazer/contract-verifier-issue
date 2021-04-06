@@ -55,6 +55,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<testFramework>JUNIT5</testFramework>
+					<baseClassForTests>lan.test.BaseContractTest</baseClassForTests>
 				</configuration>
 			</plugin>
 			<plugin>
