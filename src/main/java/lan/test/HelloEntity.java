@@ -7,6 +7,9 @@ public class HelloEntity {
         this.type = type;
     }
 
+    public HelloEntity() {
+    }
+
     public String getType() {
         return type;
     }
