@@ -11,7 +11,7 @@ Contract.make {
             contentType applicationJson()
         }
         body(
-                type: anyOf("VAL", "VAL+VAL")
+                type: regex('^(VAL|VAL\\+VAL)$')
         )
     }
     response {
