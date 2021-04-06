@@ -1,9 +1,9 @@
 package lan.test;
 
-public class HelloResponse {
+public class HelloEntity {
     private String type;
 
-    public HelloResponse(String type) {
+    public HelloEntity(String type) {
         this.type = type;
     }
 

@@ -1,6 +1,7 @@
 package lan.test;
 
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("hello")
 public class HelloController {
     @PostMapping
-    public HelloResponse hello() {
-        return new HelloResponse("VAL+VAL");
+    public HelloEntity hello(@RequestBody HelloEntity helloEntity) {
+        return new HelloEntity(helloEntity.getType());
     }
 }
