@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @PostMapping
     public HelloResponse hello() {
-        return new HelloResponse("VALVAL");
+        return new HelloResponse("VAL+VAL");
     }
 }
